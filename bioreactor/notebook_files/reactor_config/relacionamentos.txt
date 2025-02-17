@@ -1,0 +1,89 @@
+**** OPTIMAL VALUES FOR EACH SENSOR AND IMPACTS OF VARIATION *****
+------------------------------------------
+Summary of Optimal Bioreactor Conditions
+Parameter	Optimal Range
+Temperature	25–37°C (depends on organism)
+Pressure	1.0–1.2 atm (1–1.5 bar)
+Humidity	>80% RH
+Dissolved Oxygen (DO)	20–60% (depends on organism)
+------------------------------------------
+
+1. Temperature (°C)
+Bacteria (E. coli, Bacillus, etc.) → 30–37°C
+Yeast (Saccharomyces cerevisiae) → 25–35°C
+Fungi (Aspergillus, Penicillium, etc.) → 20–30°C
+Mammalian Cells (CHO, HEK, etc.) → 35–37°C
+Plant Cells → 22–28°C
+📌 Key Considerations:
+Too high → Enzyme denaturation, cell death
+Too low → Slow metabolism and growth
+
+2. Pressure (atm or bar)
+Typical operating range: 1.0–1.2 atm (1–1.5 bar)
+High-pressure bioreactors (for gas fermentation or deep-tank reactors): Up to 3 bar
+📌 Key Considerations:
+Too high → Shear stress, oxygen toxicity, foam formation
+Too low → Poor oxygen transfer, reduced cell growth
+
+3. Humidity (%)
+Gas supply (air, oxygen, or CO₂) should be humidified to prevent drying effects.
+Optimal air humidity: Above 80% RH (relative humidity).
+📌 Key Considerations:
+Too low → Evaporation from culture medium, increased osmolality
+Too high → Condensation on sensors, potential contamination risks
+
+4. Dissolved Oxygen (DO, % saturation)
+Bacteria (E. coli, Bacillus, etc.) → 30–50% DO
+Yeast and fungi → 20–40% DO
+Mammalian cells (CHO, HEK, etc.) → 40–60% DO
+Anaerobic organisms (Clostridium, Lactobacillus, etc.) → 0% DO
+📌 Key Considerations:
+Too high → Oxygen toxicity, oxidative stress
+Too low → Anaerobic conditions, reduced energy production
+
+
+
+**** RELATIONSHIPS AND IMPACT RATES *****
+
+------------------------------------------
+Summary Table: Impact Rates
+Change in Parameter	Effect on Other Parameters	Approximate Impact Rate
+↑ Temperature	↓ Oxygen Solubility	↓ 10–15% per 10°C
+↑ Temperature	↑ Evaporation (↓ Humidity)	↑ 7% water loss per 10°C
+↑ Pressure	↑ Oxygen Solubility	~100% per 1 atm increase
+↑ Pressure	↓ Evaporation (↑ Humidity)	↓ 5–10% per 1 atm
+↑ Agitation (RPM)	↑ Oxygen Transfer Rate	~50–80% per 2× RPM
+↑ Oxygen Flow	↑ Pressure (if not vented)	Proportional to gas input
+------------------------------------------
+
+1. Temperature vs. Oxygen Solubility 🌡️🆚🫁
+For every 10°C increase in temperature, oxygen solubility decreases by ~10–15% (in water).
+Example:
+At 20°C, O₂ solubility ≈ 9.1 mg/L
+At 30°C, O₂ solubility ≈ 7.5 mg/L (↓~17%)
+At 40°C, O₂ solubility ≈ 6.4 mg/L (↓~15%)
+📌 Impact: Higher temperatures make it harder for cells to access oxygen, requiring more aeration/agitation.
+
+2. Pressure vs. Oxygen Solubility ⚖️🆚🫁
+Oxygen solubility increases linearly with pressure (Henry’s Law).
+Every 1 atm (bar) increase in pressure → ~100% increase in O₂ solubility.
+Example:
+At 1 atm (1 bar) → O₂ solubility ≈ 7.5 mg/L (at 30°C).
+At 2 atm (2 bar) → O₂ solubility ≈ 15 mg/L.
+At 3 atm (3 bar) → O₂ solubility ≈ 22.5 mg/L.
+📌 Impact: High pressure can improve O₂ transfer but also increases shear stress and foam formation.
+
+3. Temperature vs. Humidity 🌡️🆚💧
+For every 10°C increase in temperature, air holds ~7% more water vapor.
+If gas is not humidified, increasing temperature causes higher evaporation from the medium, altering concentrations.
+📌 Impact: Temperature increases lower humidity, which increases evaporation, leading to medium concentration changes.
+
+4. Pressure vs. Humidity ⚖️🆚💧
+Increasing pressure suppresses evaporation → Helps maintain humidity.
+Every 1 atm increase in pressure reduces evaporation rate by ~5–10%.
+📌 Impact: High pressure reduces water loss, but if too high, it can cause dissolved gas imbalances.
+
+5. Oxygen vs. Agitation (OTR – Oxygen Transfer Rate) 🫁🆚🔄
+Doubling agitation speed (RPM) can increase O₂ transfer rate by ~50–80%.
+However, above a certain speed, shear stress damages cells (especially mammalian cells).
+📌 Impact: Oxygen transfer is enhanced by agitation but must be optimized to avoid cell damage.
